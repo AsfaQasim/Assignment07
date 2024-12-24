@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+
 
 interface IProduct {
   id: number;
@@ -35,7 +35,7 @@ const Server = async () => {
           >
             <Link href =  {`/products/${pro.id}`}>
             {/* Image Section */}
-            <Image
+            <img
               src={pro.image}
               alt={pro.title}
               className="w-full h-60 object-cover"

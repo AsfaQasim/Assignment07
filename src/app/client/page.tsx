@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Loader from "../component/loader";
-import Image from "next/image";
+
 
 interface IRecipe {
   id: number;
@@ -63,10 +63,11 @@ const Clientside = () => {
                 key={recipe.id}
                 className="border border-gray-300 rounded-lg overflow-hidden shadow-md bg-white transform transition-transform duration-300 hover:scale-105"
               >
-                <Image
+                <img
                   src={recipe.image}
                   alt={recipe.name}
                   className="w-full h-60 object-cover"
+                 
                 />
                 {/* Content Section */}
                 <div className="p-5 flex flex-col gap-3">
